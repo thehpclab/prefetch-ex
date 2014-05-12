@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 if(argc < 3) 
 	exit(1);
 int32_t arrSize = atoi(argv[1]);
-int32_t prefetchDistance = 16;
+int32_t prefetchDistance = atoi(argv[2]);
 int32_t *A = (uint32_t*) malloc(sizeof(uint32_t)*arrSize);
 int32_t *B = (uint32_t*) malloc(sizeof(uint32_t)*arrSize);
 
